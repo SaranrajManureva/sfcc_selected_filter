@@ -40,7 +40,7 @@
             <isif condition="${refinement.isAttributeRefinement || refinement.isPromotionRefinement}">
 
                 <isloop items="${refinement.values}" var="refinementValue">
-                    <isif condition="${refinementValue.type !== 'color' && refinementValue.selected && refinementValue.selectable && !refinement
+                    <isif condition="${refinementValue.selected && refinementValue.selectable && !refinement
                                      .isCategoryRefinement}">
                         <div class=" "
                             id="refinement-${refinement.displayName.toLowerCase().replace(/ /g, '-')}">
